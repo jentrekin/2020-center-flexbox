@@ -122,12 +122,11 @@ body {
   line-height: 2.5em;
 }
 
-.wrapper {
+.top {
     display:flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: 100%;
     width: 100%;
 }
 
@@ -140,9 +139,8 @@ body {
     font-weight: 300;
     font-size: 1.25em;
     line-height: 1.5em;
-    border-radius: 10px;
     padding: 0px 30px;
-    width: 450px;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content:center;
@@ -153,6 +151,32 @@ body {
     font-family: 'Lora', sans-serif;
 }
 
+.catagories {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 35px 0;
+    width: 100%;
+}
+
+#about,
+#travels,
+#contact {
+  background: #BDC2BF;
+  width: 33%;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about,
+#travels {
+  border-right: 5px solid #D4BD91;
+}
 
 
 

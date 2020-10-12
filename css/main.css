@@ -108,6 +108,20 @@ body {
     /* set height to 100% - these are important for allowing content to vertically align */
 }
 
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 40px;
+}
+
+.name h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 2.5em;
+}
+
 .wrapper {
     display:flex;
     justify-content: center;
@@ -117,10 +131,10 @@ body {
     width: 100%;
 }
 
+
 #content {
     /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
-    background: #222;
-    background:rgba(0,0,0,0.7);
+    background: #D4BD91;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
@@ -128,7 +142,7 @@ body {
     line-height: 1.5em;
     border-radius: 10px;
     padding: 0px 30px;
-    width: 300px;
+    width: 450px;
     height: 300px;
     display: flex;
     justify-content:center;

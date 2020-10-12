@@ -97,10 +97,10 @@ textarea {
 
 /*Large Background Image*/
 html {
-    background: url(../img/hills-are-alive.jpg) no-repeat center center fixed;
-    background-size: cover;
     height: 100%;
     width: 100%;
+    font-size: 16px;
+    font-family: sans-serif;
    /* set height to 100% - these are important for allowing content to vertically align */
 }
 
@@ -111,56 +111,67 @@ body {
 
 header {
   background-color: #ffffff;
-  height: 80px;
   width: 100%;
   display:flex;
+  justify-content:space-between;
   align-items: center;
-}
-
-.container {
-  display: flex;
-  justify-content:flex-start;
-  align-items: flex-start;
   flex-flow: row wrap;
   margin: 0;
 }
 
-header {
+header h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 3em;
   line-height: 2.5em;
-  display: flex;
+  padding-left: 55px;
 }
 
 
-main {
+header nav ul {
+  margin: 0 40px;
+  float: right;
+}
+
+header nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 0 25px;
+}
+
+.top-section,
+.bottom-section {
+  margin: 0 auto;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.top-section {
     /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
-    background: #D4BD91;
+    background: url(../img/hills-are-alive.jpg) no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     text-align: justify;
     font-weight: 300;
     font-size: 1.25em;
     line-height: 1.5em;
-    padding: 0 30px;
-    width: 100%;
+    padding: 0 60px;
     height: 300px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
+
 }
+
+
 
 main p span {
     font-family: 'Lora', sans-serif;
 }
 
-.catagories {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow:row wrap;
-    margin: 55px 0;
+.bottom-section {
+    padding: 0;
     width: 100%;
 }
 
@@ -169,15 +180,24 @@ main p span {
 #contact {
   background: #BDC2BF;
   width: 33%;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 350px;
+  text-align: center;
+  padding: 25px 0;
 }
 
 #about,
 #travels {
   border-right: 5px solid #D4BD91;
+}
+
+
+#travels .travel-list {
+  list-style: none;
+  padding: 0;
+}
+
+#travels .travel-list li {
+  padding: 5px 0;
 }
 
 footer{

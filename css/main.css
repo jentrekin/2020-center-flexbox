@@ -202,6 +202,16 @@ footer{
   border-right: 2px solid #D4BD91;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+header nav ul li a {
+  padding: 0 30px;
+}
+
 }
 
 
@@ -232,10 +242,19 @@ header nav ul li a {
   padding: 0 30px;
 }
 
+.bottom-section {
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0;
+  align-items: flex-start;
+}
+
 .about,
 .travels,
 .contact {
-  width: 33%;
+  width: 33.3%;
   justify-content: space-around;
   padding: 0 30px;
 }
@@ -244,6 +263,7 @@ footer {
   width: 100%;
   justify-content: center;
   align-items: center;
+  border-top: none;
 }
 
 }
